@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#container {
+    height: 500px;
+    width: 800px;
+    display: flex;
+    /* there are 4 flex direction: row, row-reverse, column, column-reverse */
+    flex-direction: row;
+    /* justify-content places box in coordinance to main axis as specified */
+    justify-content:space-around;  /*space around provides space in between and side */
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;  /* It wont remove space in between */
+    align-content: flex-start; /* It will remove space in between */
+}
+
+/* These are some item flex properties:
+align-self: it aligns the box along the cross axis(only the specified box will align)
+flex-grow: it determines the growth of flex item(only specified item will grow)
+flex-shrink: it determines the shrink of flex item (only specified item will shrink) */
+
+#box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: orange;
+    height: 200px;
+}
+
+#box3 {
+    background-color: brown;
+    height: 80px;
+}
+
+#box4 {
+    background-color: green;
+}
