@@ -1,0 +1,138 @@
+/* h1 {
+    color: red
+} */
+
+#heading1 {
+    color: red;
+    font-weight: bold;  /* font wight is like making letters bold or lighter or more heavier acc. to number */
+}
+
+#heading2 {
+    color: blue;
+    font-weight: 100;
+}
+
+.newClass {
+    color: chocolate
+}
+
+#div1 {
+    color: blueviolet;
+}
+
+/* p {
+    color: green
+} */
+
+button {
+    color:aqua;
+    background-color: brown;
+}
+
+body {
+    background-color: cornsilk;
+    /* background-image: url("photo.jpg");
+    background-size: cover; */
+}
+
+p {
+    text-align: center;
+    /* , and font style means if a browser dont have specific font style it can choose another one */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Here text align will no go to page center it will go to box center cuz i changed height and width of the box */
+h1  {
+    text-align: center;
+    text-decoration: black underline;
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    /* border-width: 3px;
+    border-style: dashed;
+    border-color: black; */
+    /* border shorthand format: width, style, color , Like this above 3 line can be written in 1 line */
+    border: 3px dashed black;
+    margin-left: 250px;
+}
+
+/* font size determines size of letters by determining its pixel.
+   line height determines the space between two lines. */
+#one {
+    font-size: 25px;
+    line-height: 30px ;
+    text-transform: uppercase;
+}
+
+div {
+    height: 100px;
+    background-color: green;
+    width: 100px;
+    /* border-width: 3px;
+    border-style: solid;
+    border-color: brown; */
+    border: 3px solid brown;
+    /* border radius is used to remove ponted edges of a box */
+    /* border-radius: 15px; */
+    /* border radius can also be used in percent 50% makes circle  */
+    border-radius: 0%;
+    /* padding is like making space where content wont be written */
+    /* padding shorthand: padding : 25px (writing this gives padding space in all direction)
+       padding: top right bottom left (clockwise) */
+    padding-left: 15px;
+    padding:25px ;
+    /* padding: 25px 30px 20px 15px; */
+
+    /* same like padding goes for margin as well */
+    /* margin: 10px; */
+    display: inline-block
+}
+
+/* box bhitra ko gap is padding & box bairako gap is margin */
+
+#hi {
+    background-color: blue;
+    /* this inline feature will make div take only space that its content will take 
+    it wont take space as like a block */
+    display: inline;
+}
+
+/* static is default position (The top,right,bottom,left & z-index properties have no effect) */
+#box1 { 
+    position: static;
+    background-color: red;
+}
+
+/* relative position means element is relative to itself (The top,right, bottom, left and z-index will work)
+It means th change will happen from its original position. */
+#box2 {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: cyan;
+    /* zindex determines which box will overlap above another box
+    (Box having more (+ve) z index will overlap another box) */
+    z-index: 1;
+    
+}
+
+/* absolute position means element is relative to its parent block (It will be removed from normal flow and connected to its parent) */
+#box3 {
+    /* position: absolute; */
+
+/* sticky is based on users scroll position (means when scroll reach box it will stick in page like fixed and left out when scroll up) */
+    position: sticky;
+    background-color: green;
+    top: 20px;
+    z-index: -1;
+}
+
+/* fixed position means it is positioned relative to browser (it will also be removed from flow & its position will be fixed) */
+#box4 {
+    position: fixed;
+    /* background-color:chocolate; */
+    right: 10px;
+    top: 20px;
+    background-image: url("photo.jpg");
+    background-size: cover;
+}
