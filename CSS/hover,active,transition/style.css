@@ -1,0 +1,47 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 2px solid black;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 5ms; */
+    /* this all line can be written in 1 line
+    format: property_name duration timing-function delay */
+    /* transition: all 1s ease-in 10ms; */
+    animation-name: colorAnimate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+}
+
+@keyframes colorAnimate {
+    from {
+         left: 10px;
+         background-color: aqua;
+        }
+    to {
+        left: 200px;
+        background-color:blueviolet ;
+        color: white;
+    }
+}
+
+/* hover means when we take our cursor into something it means hover */
+/* div:hover {
+    background-color: blue;
+    color: white;
+    font-size: 20px; */
+    /* transform: rotate(90deg); */
+    /* transform: translate(50px, 30px);
+} */
+
+/* div:active {
+    background-color: chocolate;
+} */
